@@ -44,7 +44,6 @@ import { defineComponent, ref } from 'vue'
 
 export default defineComponent({
   setup () {
-    const message = useMessage()
     return {
       light_active: ref(false),
       oxygen_active: ref(false),
