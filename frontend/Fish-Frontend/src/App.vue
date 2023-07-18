@@ -1,4 +1,8 @@
 <template>
+  <n-card title="现在喂食">
+    <n-button @click="feednow">立即投喂！</n-button>
+  </n-card>
+
   <n-card title="开关">
     <n-space>
       <n-tag> 灯光 </n-tag>
@@ -40,6 +44,7 @@ import { defineComponent, ref } from 'vue'
 
 export default defineComponent({
   setup () {
+    const message = useMessage()
     return {
       light_active: ref(false),
       oxygen_active: ref(false),
