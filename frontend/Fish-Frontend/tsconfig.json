@@ -1,5 +1,12 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      // 用于设置模块名到基于baseUrl的路径映射
+      "/@/*": [ "src/*" ],
+    }
+
+
     "target": "ES2020",
     "useDefineForClassFields": true,
     "module": "ESNext",
